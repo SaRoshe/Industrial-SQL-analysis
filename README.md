@@ -22,65 +22,55 @@ Data sources are 10 tables.
 
 ### Entities and Attributes
 
-WasteCategory
-Attributes:
+WasteCategory Attributes:
 - WasteCategoryID (Primary Key)
 - WasteCategoryDescription
 
-WasteCause
-Attributes:
-WasteCauseID (Primary Key)
-WasteCauseDescription
-WasteCategoryID (Foreign Key referencing WasteCategory)
+WasteCause Attributes:
+- WasteCauseID (Primary Key)
+- WasteCauseDescription
+- WasteCategoryID (Foreign Key referencing WasteCategory)
 
-Waste
-Attributes:
-OrderID (Foreign Key referencing Orders)
-WasteCauseID (Foreign Key referencing WasteCause)
-WasteAmount
+Waste Attributes:
+- OrderID (Foreign Key referencing Orders)
+- WasteCauseID (Foreign Key referencing WasteCause)
+- WasteAmount
 
-Orders
-Attributes:
-OrderID (Primary Key)
-MachineID (Foreign Key referencing Machine)
-Start
-End
+Orders Attributes:
+- OrderID (Primary Key)
+- MachineID (Foreign Key referencing Machine)
+- Start
+- End
 
-Operation
-Attributes:
-OrderID (Foreign Key referencing Orders)
-OperationID (Primary Key)
-ProductionAmount
+Operation Attributes:
+- OrderID (Foreign Key referencing Orders)
+- OperationID (Primary Key)
+- ProductionAmount
 
-Stop
-Attributes:
-OrderID (Foreign Key referencing Orders)
-StopID (Primary Key)
-StopStart
-StopEnd
-StopCauseID (Foreign Key referencing StopCause)
+Stop Attributes:
+- OrderID (Foreign Key referencing Orders)
+- StopID (Primary Key)
+- StopStart
+- StopEnd
+- StopCauseID (Foreign Key referencing StopCause)
 
-StopCause
-Attributes:
-StopCauseID (Primary Key)
-StopCauseDescription
-StopCategoryID (Foreign Key referencing StopCategory)
+StopCause Attributes:
+- StopCauseID (Primary Key)
+- StopCauseDescription
+- StopCategoryID (Foreign Key referencing StopCategory)
 
-StopCategory
-Attributes:
-StopCategoryID (Primary Key)
-StopCategoryDescription
+StopCategory Attributes:
+- StopCategoryID (Primary Key)
+- StopCategoryDescription
 
-Machine
-Attributes:
-MachineID (Primary Key)
-SiteID (Foreign Key referencing Site)
-ProductLineDeviceNameEn
+Machine Attributes:
+- MachineID (Primary Key)
+- SiteID (Foreign Key referencing Site)
+- ProductLineDeviceNameEn
 
-Site
-Attributes:
-SiteID (Primary Key)
-ProductSiteNameEn
+Site Attributes:
+- SiteID (Primary Key)
+- ProductSiteNameEn
 
 
 ### Relationships
