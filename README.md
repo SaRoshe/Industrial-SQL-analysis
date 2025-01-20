@@ -75,30 +75,30 @@ Site Attributes:
 
 ### Relationships
 
-WasteCategory to WasteCause
+- WasteCategory to WasteCause: 
 One-to-Many (WasteCategoryID is referenced by WasteCause).
 
-WasteCause to Waste
+- WasteCause to Waste: 
 One-to-Many (WasteCauseID is referenced by Waste).
 
-Orders to Waste
+- Orders to Waste: 
 One-to-Many (OrderID is referenced by Waste).
 
-Orders to Stop
+- Orders to Stop: 
 One-to-Many (OrderID is referenced by Stop).
 
-StopCause to Stop
+- StopCause to Stop: 
 One-to-Many (StopCauseID is referenced by Stop).
 
-StopCategory to StopCause
+- StopCategory to StopCause: 
 One-to-Many (StopCategoryID is referenced by StopCause).
 
-Orders to Operation
+- Orders to Operation: 
 One-to-Many (OrderID is referenced by Operation).
 
-Machine to Orders
+- Machine to Orders: 
 One-to-Many (MachineID is referenced by Orders).
 
-Site to Machine
+- Site to Machine: 
 One-to-Many (SiteID is referenced by Machine).
 
