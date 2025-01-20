@@ -24,8 +24,8 @@ Data sources are 10 tables.
 
 WasteCategory
 Attributes:
-WasteCategoryID (Primary Key)
-WasteCategoryDescription
+- WasteCategoryID (Primary Key)
+- WasteCategoryDescription
 
 WasteCause
 Attributes:
